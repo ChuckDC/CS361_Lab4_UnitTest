@@ -4,7 +4,6 @@ import math
 class TestRational_Ben(TestCase):
 
     def testToSTR(self):
-        # STR variables
         self.default = Rational()
         self.zero = Rational(0, 1)
         self.num1 = Rational(1, 1)
@@ -27,10 +26,11 @@ class TestRational_Ben(TestCase):
         self.float1 = Rational(1, 200000)
         self.float2 = Rational(1, 1)
         self.float3 = Rational(1559, 4420)
+        self.floatNeg = Rational(5, -2)
 
         self.assertEquals(self.defaultFloat.__float__(), 0.0)
-        self.assertEquals(self.floatZero.__float__(), 0.000005)
+        self.assertEquals(self.floatZero.__float__(), 0.0)
         self.assertEquals(self.float1.__float__(), 0.000005)
         self.assertEquals(self.float2.__float__(), 1)
         self.assertEquals(self.float3.__float__(), 0.35271493212669683257918552036199)
-        self.assertEquals
+        self.assertEquals(self.floatNeg.__float__(), -2.5)
