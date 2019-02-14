@@ -11,5 +11,5 @@ class TestRational(TestCase):
         self.assertRaises(Exception, r.__add__(True))
 
     def testDivideByZero(self):
-        r = Rational(0)
+        r = Rational(0).
 self.assertRaises(Exception)
