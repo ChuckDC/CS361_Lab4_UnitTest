@@ -34,3 +34,4 @@ class TestRational_Ben(TestCase):
         self.assertEquals(self.float2.__float__(), 1)
         self.assertEquals(self.float3.__float__(), 0.35271493212669683257918552036199)
         self.assertEquals(self.floatNeg.__float__(), -2.5)
+        
